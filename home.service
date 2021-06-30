@@ -1,0 +1,11 @@
+[Unit]
+Description=EofNET Home IOT
+After=rc-local.service
+
+[Service]
+User=root
+WorkingDirectory=/root/Go_HomeKit_Relay
+ExecStart=/root/Go_HomeKit_Relay/iot_device
+
+[Install]
+WantedBy=multi-user.target
